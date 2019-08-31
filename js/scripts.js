@@ -10,8 +10,8 @@ function order(size, crust, meatyTopping, veggyTopping ){
 }
 var pizzaSize = ["Small", "Medium", "Large"];
 var pizzaCrust = ["Crispy", "Stuffed", "Gluten-free"];
-var pizzaMeatyTopping = ["Peperonni", "Sausage", "Chicken",];
-var pizzaveggyTopping = ["Onion", "Pineapple", "Spinach",];
+var pizzaMeatyTopping = ["Chicken", "Sausage", "Peperonni",];
+var pizzaveggyTopping = ["Onion", "kales", "Strawberry",];
 
 order.prototype.cost = function(){
     if (this.size === pizzaSize[0]){
@@ -58,3 +58,45 @@ order.prototype.cost = function(){
     return this.price;
 
 }
+order.prototype.totalCost = function(){
+    var orderTotal = 0;
+    for(var order =0; order < totalCosts.length; order++){
+        orderTotal += totalCosts[order];
+    }
+    return orderTotal;
+}
+
+$(document).ready(function () {
+    $("input#totalCost").click(function (event) { 
+        event.preventDefault();
+        var sizes = $("select#size").val();
+        var crusts = $("select#crust").val();
+        var meatyToppings = $("select#meaty").val();
+        var veggyToppings = $("select#veggy").val();
+
+        var newPizzaOrder = new order(sizes, crusts, meatyToppings, veggyToppings);
+        newPizzaOrder.cost();
+        totalCosts.push(newPizzaOrder.price);
+
+        $("#pz").text(sizes);
+        $("#cr").text(crusts);
+        $("#mt").text(meatyToppings);
+        $("#vt").text(veggyToppings);
+        $("#tc").text(newPizzaOrder.totalCost());
+
+        
+    }); 
+
+});
+
+$(document).ready(function () {
+    $("#delivery").click(function () { 
+        prompt("Name")
+        prompt("Location")
+        prompt("Addrress")
+        alert("Your charges for delivery is ksh 200")
+        alert("Thank you for purchasing with our restaurant!Your order will be delivered to your location");        
+    });
+});
+
+
