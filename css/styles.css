@@ -1,7 +1,7 @@
 body{
+    background-color:rgb(197, 112, 15);
     /* margin: 0;
     padding: 0; */
-    background-image: url('img/pizza6.jpeg');
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 nav ul{
@@ -68,10 +68,11 @@ nav a:hover{
     font-size: 25px;
     color: white;    
   }
-  #contactus h2,p,h5{
+  #contact h2,p,h5{
         text-align: center;
         color:brown;
         font-family: 'Abril fatface', cursive;
+        /* background-image: url('img/pizza6.jpeg') */
   }
   
   
