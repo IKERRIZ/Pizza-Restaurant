@@ -1,6 +1,6 @@
 body{
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-image: url('img/pizza6.jpeg');
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -37,4 +37,41 @@ nav a:hover{
     text-align: center;
     font-family: 'Abril fatface', cursive;
 }
+.pizza{
+    background-image: url('img/pizza6jpeg')
+}
+#totalCost{
+    background-color: rgb(255, 136, 0);
+    /* position: absolute; */
+    /* left: 30%;  */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 5%;
+    width: 20%;
+  }
+  #delivery{
+    background-color: rgb(255, 136, 0);
+    border-radius: 10%; 
+    margin-top: 5%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 20%;
+  }
+  #textPrice{
+    box-sizing: border-box;
+    padding:30px;
+    border: 1px solid #ff8000;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px 3px black;
+    font-size: 25px;
+    color: white;    
+  }
+  #contactus h2,p,h5{
+        text-align: center;
+        color:brown;
+        font-family: 'Abril fatface', cursive;
+  }
+  
   
