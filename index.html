@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,93 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
-    
+
 </head>
+
 <body>
-        <div class="container">
-                <div id="home">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#home">Home</a>
-                            </li>
-                            <li>
-                                <a href="#order">Pizza Order</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact Us</a>
-                            </li>
-                        </ul>
-                    </nav>
+    <div class="container">
+        <div id="home">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#order">Pizza Order</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- <div class="take">
+                        <h1>"Where taste meets the myth!"</h1>
+                    </div>  <br> -->
+        
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="img/pizza3.jpeg" alt="pizza3" style="width:200px; height:200px;">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="img/pizza2.jpeg" alt="pizza2" style="width:200px; height:200px;">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="img/pizza1.jpeg" alt="pizza1" style="width:200px; height:200px;">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img src="img/pizza5.jpeg" alt="pizza5" style="width:200px; height:200px;">
+                    </a>
+        </div>
+        <div class="text">
+                <h1>"Where pizza speaks with your palate!"</h1>
+            </div>
+
+            <div id="order">
+                    <hr>
+                    <form>
+                        <label>Pizza Size:</label>
+                        <select class="form-control" id="size">
+                            <option>Choose the size of pizza </option><br>
+                            <option value="Large">Large KSH 800</option>
+                            <option value="Medium">Medium KSH 400</option>
+                            <option value="Small">Small KSH 200 </option>
+                        </select><br><br><br><br>
+
+                        <label>Pizza Crust:</label>
+                        <select class="form-control" id="crust">
+                            <option>Choose your Pizza Crust </option><br>
+                            <option value="Crispy">Cripsy</option>
+                            <option value="Stuffed">Stuffed </option>
+                            <option value="Glutten-free">Glutten Free </option>
+                        </select><br><br><br><br>
+
+                        <label>Meaty Pizza Topping;</label>
+                        <select class="form-control" id="meaty">
+                            <option>Choose your Pizza meat toppings </option><br>
+                            <option value="Chicken">Chicken </option><br>
+                            <option value="Sausage">Sausage </option><br>
+                            <option value="Peperonni">Peperonni </option><br>
+                        </select><br><br><br><br>
+
+                        <label>Veggy Pizza Topping;</label>
+                        <select class="form-control" id="veggy">
+                            <option>Choose your Pizza Veggy toppings </option><br>
+                            <option value="Onion">Onion </option>
+                            <option value="Kales">Kales </option>
+                            <option value="Strawberry">Strawberry </option>
+                        </select><br><br><br>
+                        <input type="submit" class="btn btn-succees btn-rounded waves-effect btn-lg" id="totalCost" value="Check Out!!!">
+                    </form>
+        
 
 
 
@@ -39,7 +109,6 @@
 
 
 
-                   
 
 
 
@@ -69,8 +138,11 @@
 
 
 
- </div>
+
+
+    </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
